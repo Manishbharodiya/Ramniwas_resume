@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ramniwas Lakharan | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Ramniwas</div>
+      <button class="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul id="nav-menu" class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#personal">Personal</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Hello, I'm <span>Ramniwas Lakharan</span></h1>
+      <p class="subtitle">A Fresher aspiring to grow, learn and contribute.</p>
+      <div class="cta-group">
+        <a href="#contact" class="btn primary">Contact Me</a>
+        <button class="btn ghost" id="shareProfile" aria-label="Share profile">Share Profile</button>
+        <button class="btn accent" id="openGallery" aria-haspopup="dialog" aria-controls="galleryModal">View Images</button>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="public/image.png" alt="Ramniwas Lakharan">
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about section">
+    <h2>About Me</h2>
+    <p>My aim is to work innovatively for the enhancement and betterment of knowledge. 
+      I aspire to work for an institution which offers career growth and chances to learn and improve my knowledge.</p>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="education section">
+    <h2>Education</h2>
+    <div class="timeline">
+      <div class="card"><h3>M.A</h3><p>University of Rajasthan, 2018 • Second</p></div>
+      <div class="card"><h3>B.A</h3><p>University of Rajasthan, 2014 • First</p></div>
+      <div class="card"><h3>ITI (Mechanic Diesel)</h3><p>RCVET, 2013 • Second</p></div>
+      <div class="card"><h3>RS-CIT</h3><p>VMOU Kota, 2013 • First</p></div>
+      <div class="card"><h3>12th</h3><p>BSER Ajmer, 2011 • First</p></div>
+      <div class="card"><h3>10th</h3><p>BSER Ajmer, 2009 • First</p></div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="experience section">
+    <h2>Experience</h2>
+    <div class="timeline">
+      <div class="card">
+        <h3>Fresher</h3>
+        <p>Actively seeking opportunities. Familiar with Basic Computer & RS-CIT.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Personal Section -->
+  <section id="personal" class="personal section">
+    <h2>Personal Details</h2>
+    <ul>
+      <li><strong>Father's Name:</strong> Mr. Khem Chand Jat</li>
+      <li><strong>DOB:</strong> 28/06/1994</li>
+      <li><strong>Category:</strong> OBC</li>
+      <li><strong>Marital Status:</strong> Married</li>
+      <li><strong>Languages:</strong> Hindi, English</li>
+      <li><strong>Address:</strong> Vill. Loharwada, Post – Khedimilk, Jaipur, Rajasthan</li>
+    </ul>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact section">
+    <h2>Contact</h2>
+    <p><strong>Phone:</strong> 9549263332</p>
+    <p><strong>Email:</strong> <a href="mailto:ramniwaslakharan@gmail.com">ramniwaslakharan@gmail.com</a></p>
+  </section>
+
+  <!-- Gallery Modal -->
+  <div id="galleryModal" class="modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-backdrop" data-close="gallery"></div>
+    <div class="modal-dialog" role="document">
+      <header class="modal-header">
+        <h3>Image Gallery</h3>
+        <button class="icon-btn" id="closeGallery" aria-label="Close gallery">✕</button>
+      </header>
+      <div class="modal-body">
+        <div class="viewer">
+          <img id="galleryViewer" src="" alt="Selected image">
+        </div>
+        <div class="gallery-grid" id="galleryGrid"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Ramniwas Lakharan | All Rights Reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
