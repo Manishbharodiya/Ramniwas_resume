@@ -72,28 +72,43 @@
   
   /* Hero */
   .hero {
+    padding: 80px 20px;
+    background: #0b1220;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 80px 50px;
-    background: linear-gradient(180deg, #0b1220 0%, #0f172a 100%);
-    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero-box {
+    width: 100%;
+    max-width: 700px;
+    background: linear-gradient(135deg, #22a6f0 0%, #5b7cfa 50%, #6a64f1 100%);
+    border-radius: 6px;
+    padding: 48px 20px 56px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 12px 40px rgba(0,0,0,0.35);
+  }
+
+  .hero-avatar {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 999px;
+    border: 6px solid rgba(255,255,255,0.9);
+    display: block;
+    margin: 0 auto 18px;
   }
   
-  .hero-content h1 {
-    font-size: 36px;
-    color: #fff;
-  }
+  .hero-content h1 { font-size: 36px; color: #fff; }
+  .hero-box h1 { font-size: 40px; color: #fff; margin-top: 4px; }
   
   .hero-content h1 span {
     color: #60a5fa;
   }
   
-  .hero-content p {
-    margin: 15px 0;
-    font-size: 18px;
-    color: #cbd5e1;
-  }
+  .hero-content p { margin: 15px 0; font-size: 18px; color: #cbd5e1; }
+  .hero-box .subtitle { color: #eaf6ff; }
   
   .cta-group { display: flex; flex-wrap: wrap; gap: 10px; }
 
@@ -119,13 +134,7 @@
   .btn.accent { background:#14b8a6; border-color:#14b8a6; color:#042f2e; }
   .btn.accent:hover { background:#0d9488; color:#e7fffb; }
   
-  .hero-image img {
-    width: 250px;
-    border-radius: 50%;
-    margin-top: 20px;
-    border: 6px solid rgba(255,255,255,0.08);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.35);
-  }
+  /* remove old split hero image layout */
   
   /* Sections */
   .section {
@@ -157,6 +166,8 @@
     margin-bottom: 10px;
     color: #60a5fa;
   }
+  .skills { margin-top: 12px; display: flex; flex-wrap: wrap; gap: 8px; }
+  .chip { background:#0b1220; border:1px solid #1f2937; color:#cbd5e1; padding:6px 10px; border-radius:999px; font-size: 12px; }
   
   /* Personal */
   .personal ul {
